@@ -1,399 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4X88XK7P4X"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4X88XK7P4X');
-</script>
-   
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Monster Harvester - Collect and Battle Monsters in this Epic Adventure Game</title>
-    <meta name="description" content="Play Monster Harvester online for free - an immersive monster collecting and battling game where you harvest powerful creatures to build your ultimate team.">
-    <link rel="canonical" href="https://monsterharvester.monster/">
-    <meta name="robots" content="index, follow">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    colors: {
-                        'apple-blue': '#007AFF',
-                        'apple-gray': '#8E8E93',
-                        'apple-light-gray': '#F2F2F7',
-                        'apple-dark': '#1D1D1F',
-                        'apple-red': '#FF3B30',
-                        'apple-green': '#34C759',
-                        'apple-orange': '#FF9500',
-                        'apple-purple': '#AF52DE'
-                    }
-                }
-            }
-        }
-    </script>
-    <style type="text/css">
-        @media (max-width: 768px) {
-            .game-container {
-                height: 70vh;
-            }
-        }
-    </style>
+    <title>Game Simple Collection - Discover Fun Web Games</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-<body class="bg-apple-light-gray text-apple-dark font-sans">
-   
-    <header class="bg-apple-dark text-white py-4 shadow-md sticky top-0 z-10">
-        <div class="container mx-auto px-4 md:px-6 flex flex-col md:flex-row justify-between items-center">
-            <div class="flex items-center mb-3 md:mb-0">
-                <img src="/api/placeholder/60/60" alt="Monster Harvester Logo" class="h-10 w-10 mr-3 rounded-lg">
-                <span class="text-xl font-bold">MonsterHarvester.monster</span>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="fas fa-gamepad"></i>
+                <span>Game Collection</span>
             </div>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#play" class="hover:text-apple-green transition-colors">Play Now</a></li>
-                    <li><a href="#about" class="hover:text-apple-green transition-colors">About</a></li>
-                    <li><a href="#monsters" class="hover:text-apple-green transition-colors">Monsters</a></li>
-                    <li><a href="#guide" class="hover:text-apple-green transition-colors">Guide</a></li>
-                </ul>
-            </nav>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#games">Games</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </div>
-    </header>
+    </nav>
 
-    <section id="hero" class="bg-gradient-to-b from-apple-dark to-apple-purple py-16 text-white">
-        <div class="container mx-auto px-4 md:px-6 text-center">
-            <h1 class="text-4xl md:text-6xl font-bold mb-4">Monster Harvester</h1>
-            <p class="text-xl md:text-2xl mb-8">Collect, evolve, and battle with powerful monsters in this epic adventure!</p>
-            <a href="#play" class="bg-apple-green hover:bg-opacity-90 text-white font-bold py-3 px-8 rounded-full text-lg transition-all shadow-lg hover:shadow-xl">Play Now</a>
-        </div>
-    </section>
-
-    <main class="container mx-auto px-4 md:px-6 py-12">
-        <section id="play" class="mb-16">
-            <div class="game-container w-full bg-black rounded-xl shadow-2xl overflow-hidden mb-8 h-[80vh]">
-                <iframe src="https://cloud.onlinegames.io/games/2025/unity/monster-survivors/index-og.html" class="w-full h-full border-0" allowfullscreen></iframe>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-3 text-apple-purple border-b-2 border-apple-purple pb-2">Game Controls</h2>
-                <div class="grid md:grid-cols-2 gap-6 mt-4">
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2 text-apple-blue">Keyboard Controls:</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>WASD</strong> or <strong>Arrow Keys</strong> - Move your character</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>Space</strong> - Harvest/Collect monsters</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>E</strong> - Use special ability</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>1-5</strong> - Switch active monster</span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div>
-                        <h3 class="text-lg font-semibold mb-2 text-apple-blue">Mobile Controls:</h3>
-                        <ul class="space-y-2">
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>Left Joystick</strong> - Movement control</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>Harvest Button</strong> - Tap to collect monsters</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>Ability Button</strong> - Use special abilities</span>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-orange font-bold mr-2">•</span>
-                                <span><strong>Monster Selection</strong> - Tap monster icons to switch</span>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+    <!-- Main Content -->
+    <main>
+        <section class="hero">
+            <h1>Discover Fun Web Games</h1>
+            <p>Less Is More</p>
         </section>
 
-        <section id="about" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b-2 border-apple-blue pb-2">About Monster Harvester</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div>
-                    <p class="mb-4 text-lg">Monster Harvester is an immersive monster collecting and battling game where you explore vast landscapes in search of unique and powerful creatures to add to your team.</p>
-                    <p class="mb-4">In this exciting adventure, you'll traverse diverse biomes from lush forests to scorching deserts, each home to different monster species with unique abilities and attributes. Your mission is to harvest these creatures, train them, and build the ultimate monster squad.</p>
-                    <p>As you progress, you'll face increasingly challenging encounters and rival harvesters. Develop strategic battle techniques, discover rare monsters, and evolve your companions to become the most renowned Monster Harvester in the realm!</p>
+        <!-- Games Grid -->
+        <section class="games-grid">
+            <!-- Game Card 1 -->
+            <a href="games/2048.html" class="game-card">
+                <div class="game-image">
+                    <img src="images/thumbnails/2048.jpg" alt="2048">
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Game Features</h3>
-                    <ul class="space-y-3">
-                        <li class="flex items-start">
-                            <span class="text-apple-green font-bold mr-2">✓</span>
-                            <span><strong>Vast Open World</strong> - Explore diverse environments filled with unique monster species</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-apple-green font-bold mr-2">✓</span>
-                            <span><strong>200+ Unique Monsters</strong> - Each with different abilities, strengths, and evolution paths</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-apple-green font-bold mr-2">✓</span>
-                            <span><strong>Strategic Combat System</strong> - Utilize elemental advantages and team synergies</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-apple-green font-bold mr-2">✓</span>
-                            <span><strong>Evolution & Fusion</strong> - Combine and evolve your monsters to unlock powerful forms</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-apple-green font-bold mr-2">✓</span>
-                            <span><strong>Competitive Online Battles</strong> - Test your team against other harvesters</span>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="text-apple-green font-bold mr-2">✓</span>
-                            <span><strong>Regular Updates</strong> - New monsters, regions, and features added frequently</span>
-                        </li>
-                    </ul>
+                <div class="game-info">
+                    <h3>2048</h3>
+                    <p>Classic number merging game. Move blocks with arrow keys, merge same numbers, and aim for 2048.</p>
                 </div>
-            </div>
-        </section>
+            </a>
 
-        <section id="monsters" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b-2 border-apple-green pb-2">Monster Types</h2>
-            <div class="grid md:grid-cols-3 gap-6">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-40 bg-apple-blue flex items-center justify-center">
-                        <img src="/api/placeholder/120/120" alt="Elemental Monsters" class="h-24 w-24">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-2 text-apple-blue">Elemental Monsters</h3>
-                        <p class="mb-3">Masters of natural forces like fire, water, earth, and air. Elemental monsters excel in their specific environments and can manipulate the battlefield to their advantage.</p>
-                        <p><strong>Common Types:</strong> Flamebeast, Aquaserpent, Stoneguard, Windsprite</p>
-                    </div>
+            <!-- Game Card 2 -->
+            <a href="games/snake.html" class="game-card">
+                <div class="game-image">
+                    <img src="images/thumbnails/minecraft.jpg" alt="Minecraft graphics">
                 </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-40 bg-apple-purple flex items-center justify-center">
-                        <img src="/api/placeholder/120/120" alt="Mythical Monsters" class="h-24 w-24">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-2 text-apple-purple">Mythical Monsters</h3>
-                        <p class="mb-3">Rare and powerful creatures with legendary abilities. Mythical monsters are difficult to find and harvest but provide immense power to your team.</p>
-                        <p><strong>Common Types:</strong> Drakomander, Phoenixeon, Krakoros, Unicornix</p>
-                    </div>
+                <div class="game-info">
+                    <h3>Minecraft graphics</h3>
+                    <p>Experience a Minecraft-style parkour adventure with beautiful voxel graphics and challenging levels.</p>
                 </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-40 bg-apple-green flex items-center justify-center">
-                        <img src="/api/placeholder/120/120" alt="Mechanical Monsters" class="h-24 w-24">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-2 text-apple-green">Mechanical Monsters</h3>
-                        <p class="mb-3">Constructed beings with robotic parts and technological abilities. Mechanical monsters have unique resistances and can adapt to various combat situations.</p>
-                        <p><strong>Common Types:</strong> Geartron, Steamabot, Magnetroid, Cyberdrake</p>
-                    </div>
-                </div>
-            </div>
-            <div class="grid md:grid-cols-3 gap-6 mt-6">
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-40 bg-apple-orange flex items-center justify-center">
-                        <img src="/api/placeholder/120/120" alt="Shadow Monsters" class="h-24 w-24">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-2 text-apple-orange">Shadow Monsters</h3>
-                        <p class="mb-3">Mysterious beings that thrive in darkness. Shadow monsters excel at stealth and can inflict status effects on opponents.</p>
-                        <p><strong>Common Types:</strong> Nightcrawler, Shadowfang, Umbrafox, Voidwing</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-40 bg-apple-red flex items-center justify-center">
-                        <img src="/api/placeholder/120/120" alt="Ancient Monsters" class="h-24 w-24">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-2 text-apple-red">Ancient Monsters</h3>
-                        <p class="mb-3">Primordial creatures from a forgotten age. Ancient monsters possess incredible wisdom and devastating ancient abilities.</p>
-                        <p><strong>Common Types:</strong> Fossilrex, Chronoraptor, Runeserpent, Obeliskaur</p>
-                    </div>
-                </div>
-                <div class="bg-white rounded-lg shadow-md overflow-hidden">
-                    <div class="h-40 bg-apple-gray flex items-center justify-center">
-                        <img src="/api/placeholder/120/120" alt="Fusion Monsters" class="h-24 w-24">
-                    </div>
-                    <div class="p-5">
-                        <h3 class="text-xl font-bold mb-2 text-apple-gray">Fusion Monsters</h3>
-                        <p class="mb-3">Unique combinations of multiple monster types. Fusion monsters possess abilities from their component species and can be created through special harvesting techniques.</p>
-                        <p><strong>Common Types:</strong> Flamequatic, Electro-Terra, Shadowmech, Mystical-Stone</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </a>
 
-        <section id="guide" class="mb-16">
-            <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b-2 border-apple-red pb-2">Harvester's Guide</h2>
-            <div class="grid md:grid-cols-2 gap-8">
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Getting Started</h3>
-                    <ol class="space-y-3 list-decimal pl-5">
-                        <li>
-                            <strong>Choose Your Starting Region</strong>
-                            <p class="mt-1">Each starting area offers different initial monsters. Choose based on your preferred playstyle and monster type.</p>
-                        </li>
-                        <li>
-                            <strong>Master Basic Harvesting</strong>
-                            <p class="mt-1">Learn to track monster patterns and use the right approach for each type. Different monsters require different harvesting techniques.</p>
-                        </li>
-                        <li>
-                            <strong>Build a Balanced Team</strong>
-                            <p class="mt-1">Include monsters with complementary abilities. A diverse team will help you overcome various challenges.</p>
-                        </li>
-                        <li>
-                            <strong>Complete Early Quests</strong>
-                            <p class="mt-1">Tutorial quests provide valuable rewards and teach essential game mechanics. Don't skip them!</p>
-                        </li>
-                        <li>
-                            <strong>Upgrade Your Harvesting Gear</strong>
-                            <p class="mt-1">Better equipment increases your chances of successfully harvesting rare monsters.</p>
-                        </li>
-                    </ol>
+            <!-- Game Card 3 -->
+            <a href="games/tetris.html" class="game-card">
+                <div class="game-image">
+                    <img src="images/thumbnails/billiards.jpg" alt="8 Ball Billiards">
                 </div>
-                <div class="bg-white p-6 rounded-lg shadow-md">
-                    <h3 class="text-xl font-semibold mb-3 text-apple-red">Advanced Strategies</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="font-bold text-apple-dark">Element Matching</h4>
-                            <p>Understanding elemental advantages is crucial for battle success:</p>
-                            <ul class="mt-1 pl-5 list-disc">
-                                <li>Fire beats Nature, but is weak to Water</li>
-                                <li>Water beats Fire, but is weak to Electric</li>
-                                <li>Nature beats Earth and Water, but is weak to Fire</li>
-                                <li>Electric beats Water and Mechanical, but is weak to Earth</li>
-                                <li>Earth beats Electric, but is weak to Nature</li>
-                            </ul>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-apple-dark">Evolution Timing</h4>
-                            <p>Some monsters learn crucial abilities before evolving. Consider delaying evolution to master these skills first.</p>
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-apple-dark">Fusion Requirements</h4>
-                            <p>For successful monster fusion, ensure both monsters are:</p>
-                            <ul class="mt-1 pl-5 list-disc">
-                                <li>At maximum affinity level</li>
-                                <li>Compatible element types</li>
-                                <li>Similar power levels</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="game-info">
+                    <h3>8 Ball Billiards</h3>
+                    <p>Classic 8-ball pool game. Aim carefully and pocket all your balls before the 8 ball.</p>
                 </div>
-            </div>
-            <div class="bg-white p-6 rounded-lg shadow-md mt-8">
-                <h3 class="text-xl font-semibold mb-3 text-apple-purple">Seasonal Events</h3>
-                <div class="grid md:grid-cols-3 gap-4">
-                    <div class="border border-apple-light-gray rounded p-4">
-                        <h4 class="font-bold text-apple-green">Spring Bloom Festival</h4>
-                        <p class="text-sm mt-1">Increased spawn rates for Nature-type monsters and special spring-themed variants. Participate in flower collection challenges for exclusive rewards.</p>
-                    </div>
-                    <div class="border border-apple-light-gray rounded p-4">
-                        <h4 class="font-bold text-apple-red">Summer Inferno Challenge</h4>
-                        <p class="text-sm mt-1">Fire-type monsters become more powerful. Battle in volcanic arenas against elite fire trainers for legendary fire monster eggs.</p>
-                    </div>
-                    <div class="border border-apple-light-gray rounded p-4">
-                        <h4 class="font-bold text-apple-orange">Autumn Harvest Competition</h4>
-                        <p class="text-sm mt-1">Show off your monster collection in competitive tournaments. Win unique evolution items and rare monster variants.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </a>
 
-        <section id="community" class="mb-12">
-            <h2 class="text-3xl font-bold mb-6 text-apple-dark border-b-2 border-apple-orange pb-2">Join the Community</h2>
-            <div class="bg-white p-6 rounded-lg shadow-md">
-                <div class="grid md:grid-cols-2 gap-8">
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3 text-apple-blue">Connect With Fellow Harvesters</h3>
-                        <p class="mb-4">Join thousands of players in our active community. Share strategies, trade monsters, and participate in special community events!</p>
-                        <div class="flex space-x-4 mt-5">
-                            <a href="#" class="bg-apple-dark hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded transition-all">Discord</a>
-                            <a href="#" class="bg-apple-blue hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded transition-all">Forums</a>
-                            <a href="#" class="bg-apple-red hover:bg-opacity-90 text-white font-medium py-2 px-4 rounded transition-all">YouTube</a>
-                        </div>
-                    </div>
-                    <div>
-                        <h3 class="text-xl font-semibold mb-3 text-apple-green">Weekly Events</h3>
-                        <ul class="space-y-3">
-                            <li class="flex items-start">
-                                <span class="text-apple-purple font-bold mr-2">•</span>
-                                <div>
-                                    <span class="font-bold">Monster Mondays</span>
-                                    <p class="text-sm">Increased spawn rates for rare monsters</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-purple font-bold mr-2">•</span>
-                                <div>
-                                    <span class="font-bold">Tournament Tuesdays</span>
-                                    <p class="text-sm">Compete against other harvesters for exclusive prizes</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-purple font-bold mr-2">•</span>
-                                <div>
-                                    <span class="font-bold">Wild Wednesdays</span>
-                                    <p class="text-sm">Unexpected events and challenges appear throughout the day</p>
-                                </div>
-                            </li>
-                            <li class="flex items-start">
-                                <span class="text-apple-purple font-bold mr-2">•</span>
-                                <div>
-                                    <span class="font-bold">Trading Thursdays</span>
-                                    <p class="text-sm">Enhanced trading features and special market deals</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
+            <!-- Game Card 4 -->
+            <a href="games/breakout.html" class="game-card">
+                <div class="game-image">
+                    <img src="images/thumbnails/traffic-rider.jpg" alt="Traffic Rider">
                 </div>
-            </div>
+                <div class="game-info">
+                    <h3>Traffic Rider</h3>
+                    <p>Experience the thrill of motorcycle racing through traffic. Navigate through cars, earn points, and complete missions.</p>
+                </div>
+            </a>
+
+            <!-- Game Card 5 -->
+            <a href="games/memory.html" class="game-card">
+                <div class="game-image">
+                    <img src="images/thumbnails/murder-mafia.jpg" alt="Murder Mafia">
+                </div>
+                <div class="game-info">
+                    <h3>Murder Mafia</h3>
+                    <p>Join the thrilling social deduction game where players work together to find the murderer among them.</p>
+                </div>
+            </a>
+
+            <!-- Game Card 6 -->
+            <a href="games/bounce.html" class="game-card">
+                <div class="game-image">
+                    <img src="images/thumbnails/getaway-shootout.jpg" alt="Getaway Shootout">
+                </div>
+                <div class="game-info">
+                    <h3>Getaway Shootout</h3>
+                    <p>Engage in an exciting multiplayer shootout game with unique characters and weapons. Race to escape while battling other players!</p>
+                </div>
+            </a>
         </section>
     </main>
 
-    <footer class="bg-apple-dark text-white py-8">
-        <div class="container mx-auto px-4 md:px-6">
-            <div class="grid md:grid-cols-3 gap-8">
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Monster Harvester</h3>
-                    <p>The ultimate monster collecting experience. Harvest, train, and battle with hundreds of unique creatures!</p>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
-                    <ul class="space-y-2">
-                        <li><a href="#play" class="hover:text-apple-green transition-colors">Play Now</a></li>
-                        <li><a href="#about" class="hover:text-apple-green transition-colors">About</a></li>
-                        <li><a href="#monsters" class="hover:text-apple-green transition-colors">Monsters</a></li>
-                        <li><a href="#guide" class="hover:text-apple-green transition-colors">Guide</a></li>
-                        <li><a href="#community" class="hover:text-apple-green transition-colors">Community</a></li>
-                    </ul>
-                </div>
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Stay Connected</h3>
-                    <div class="flex space-x-4">
-                        <a href="#" class="hover:text-apple-blue transition-colors">
-                            <span class="sr-only">Twitter</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="hover:text-apple-blue transition-colors">
-                            <span class="sr-only">Facebook</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path>
-                            </svg>
-                        </a>
-                        <a href="#" class="hover:text-apple-blue transition-colors">
-                            <span class="sr-only">Instagram</span>
-                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                                <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>We are dedicated to providing the best web gaming experience.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <p>Email: ygraptor@gmail.com</p>
+                <p> </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Game Simple Collection. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
